@@ -8,7 +8,7 @@ import 'package:pet_animal_app/nine_screen.dart';
 import 'package:pet_animal_app/routes/routes_name.dart';
 
 class BottomScreen extends StatefulWidget {
-  const BottomScreen({Key? key, required}) : super(key: key);
+  const BottomScreen({Key? key,}) : super(key: key);
 
   @override
   State<BottomScreen> createState() => _BottomScreenState();

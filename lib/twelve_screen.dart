@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pet_animal_app/common_widget/botton_navigationbar_screen.dart';
 import 'package:pet_animal_app/routes/routes_name.dart';
-
-import 'commen_widget/botton_navigationbar_screen.dart';
 
 class TwelveScreen extends StatefulWidget {
   const TwelveScreen({Key? key}) : super(key: key);

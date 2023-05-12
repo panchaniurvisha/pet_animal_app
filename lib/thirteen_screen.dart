@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pet_animal_app/commen_widget/app_container.dart';
-
-import 'commen_widget/botton_navigationbar_screen.dart';
+import 'package:pet_animal_app/common_widget/app_container.dart';
+import 'package:pet_animal_app/common_widget/botton_navigationbar_screen.dart';
 
 class ThirteenScreen extends StatefulWidget {
   const ThirteenScreen({Key? key}) : super(key: key);

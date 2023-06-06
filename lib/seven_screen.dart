@@ -29,7 +29,8 @@ class _SevenScreenState extends State<SevenScreen> {
                   isScrollControlled: true,
                   isDismissible: true,
                   context: context,
-                  barrierColor: Colors.transparent,
+                  backgroundColor: Colors.transparent,
+                 // barrierColor: Colors.transparent,
                   builder: (context) => Container(
                     height: 520,
                     width: double.infinity,

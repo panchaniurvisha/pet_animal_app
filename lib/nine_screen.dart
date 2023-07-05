@@ -117,8 +117,8 @@ class _NineScreenState extends State<NineScreen> {
                           borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(16),
                               bottomLeft: Radius.circular(16))),
-                      child: Row(
-                        children: const [
+                      child: const Row(
+                        children: [
                           Icon(
                             Icons.search,
                             color: Color(0xff734B3E),

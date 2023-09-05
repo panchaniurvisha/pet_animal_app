@@ -16,7 +16,7 @@ class _SixScreenState extends State<SixScreen> {
         child: SingleChildScrollView(
           physics: const AlwaysScrollableScrollPhysics(),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 20),
             child: Column(
               children: [
                 Row(
@@ -101,7 +101,7 @@ class _SixScreenState extends State<SixScreen> {
                       ),
                       Container(
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 10),
+                            horizontal: 5, vertical: 10),
                         decoration: const BoxDecoration(
                           borderRadius: BorderRadius.only(
                             topRight: Radius.circular(
@@ -116,7 +116,7 @@ class _SixScreenState extends State<SixScreen> {
                           style: TextStyle(
                             color: Color(0xff191D21),
                             fontFamily: "SF Pro",
-                            fontSize: 16,
+                            fontSize: 14,
                             fontWeight: FontWeight.w400,
                             fontStyle: FontStyle.normal,
                           ),

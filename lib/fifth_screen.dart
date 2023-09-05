@@ -18,7 +18,7 @@ class _FifthScreenState extends State<FifthScreen> {
         child: SingleChildScrollView(
           physics: const AlwaysScrollableScrollPhysics(),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 15),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -60,7 +60,7 @@ class _FifthScreenState extends State<FifthScreen> {
                   ],
                 ),
                 const Padding(
-                  padding: EdgeInsets.only(left: 300, top: 20),
+                  padding: EdgeInsets.only(left: 290, top: 20),
                   child: Text(
                     "Yasmin",
                     style: TextStyle(
@@ -151,9 +151,9 @@ class _FifthScreenState extends State<FifthScreen> {
                           borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(16),
                               bottomLeft: Radius.circular(16))),
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: const [
+                        children: [
                           Icon(Icons.wechat_sharp, color: Color(0xff734B3E)),
                           SizedBox(
                             width: 15,
@@ -173,7 +173,7 @@ class _FifthScreenState extends State<FifthScreen> {
                     ),
                     Container(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 14, vertical: 18),
+                          horizontal: 10, vertical: 18),
                       decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topRight: Radius.circular(
@@ -188,7 +188,7 @@ class _FifthScreenState extends State<FifthScreen> {
                         style: TextStyle(
                           color: Color(0xff191D21),
                           fontFamily: "SF Pro",
-                          fontSize: 16,
+                          fontSize: 14,
                           fontWeight: FontWeight.w400,
                           fontStyle: FontStyle.normal,
                         ),

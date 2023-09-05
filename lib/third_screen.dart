@@ -23,7 +23,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
     return SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -74,11 +74,11 @@ class _ThirdScreenState extends State<ThirdScreen> {
                       'assets/images/3_cleo_dog.png',
                       height: 198,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 15),
+                    const Padding(
+                      padding: EdgeInsets.only(left: 15),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
+                        children: [
                           Text(
                             "Cleo",
                             style: TextStyle(
@@ -155,57 +155,57 @@ class _ThirdScreenState extends State<ThirdScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  InkWell(
-                    onTap: () {
-                      debugPrint("Fourth Screen");
-                      Navigator.pushNamed(context, RoutesName.bottomScreen);
-                    },
-                    child: Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 25, vertical: 20),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: const Color(0xff734B3E),
-                        ),
-                        child: const Text("Agregar a favoritos",
-                            style: TextStyle(
-                              color: Color(0xffFFFFFF),
-                              fontFamily: "SF Pro",
-                              fontSize: 16,
-                              fontWeight: FontWeight.w400,
-                              fontStyle: FontStyle.normal,
-                            ))),
-                  ),
-                  InkWell(
-                    onTap: () {
-                      debugPrint("Fifth Screen------->");
-                      Navigator.pushNamed(context, RoutesName.fifthScreen);
-                    },
-                    child: Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 17),
-                        decoration: BoxDecoration(
-                          border: Border.all(color: const Color(0xff734B3E)),
-                          borderRadius: BorderRadius.circular(16),
-                          color: const Color(0xffFFFFFF),
-                        ),
-                        child: Row(
-                          children: const [
-                            Icon(Icons.wechat_sharp, color: Color(0xff734B3E)),
-                            SizedBox(
-                              width: 15,
-                            ),
-                            Text("Chatear con Cleo",
-                                style: TextStyle(
-                                  color: Color(0xff734B3E),
-                                  fontFamily: "SF Pro",
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w400,
-                                  fontStyle: FontStyle.normal,
-                                )),
-                          ],
+                  ElevatedButton(
+                    onPressed: () => Navigator.pushNamedAndRemoveUntil(
+                      context,
+                      RoutesName.bottomScreen,
+                      (route) => false,
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      fixedSize: const Size(170, 60),
+                      backgroundColor: const Color(0xff734B3E),
+                      elevation: 5, // Adjust the button elevation
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                    ),
+                    child: const Text("Agregar a favoritos",
+                        style: TextStyle(
+                          color: Color(0xffFFFFFF),
+                          fontFamily: "SF Pro",
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          fontStyle: FontStyle.normal,
                         )),
                   ),
+                  OutlinedButton(
+                      onPressed: () =>
+                          Navigator.pushNamed(context, RoutesName.fifthScreen),
+                      style: OutlinedButton.styleFrom(
+                        fixedSize: const Size(170, 60),
+                        side: const BorderSide(
+                          color:
+                              Color(0xff734B3E), // Border color// Border width
+                        ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(
+                              16), // Button's border radius
+                        ),
+                      ),
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Icon(Icons.wechat_sharp, color: Color(0xff734B3E)),
+                          Text("Chatear con Cleo",
+                              style: TextStyle(
+                                color: Color(0xff734B3E),
+                                fontFamily: "SF Pro",
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                                fontStyle: FontStyle.normal,
+                              )),
+                        ],
+                      ))
                 ],
               ),
             ],

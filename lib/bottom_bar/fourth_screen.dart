@@ -34,7 +34,7 @@ class _FourthScreenState extends State<FourthScreen> {
     return SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 20),
           child: Column(
             children: [
               Row(
@@ -93,8 +93,8 @@ class _FourthScreenState extends State<FourthScreen> {
                           borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(16),
                               bottomLeft: Radius.circular(16))),
-                      child: Row(
-                        children: const [
+                      child: const Row(
+                        children: [
                           Icon(
                             Icons.search,
                             color: Color(0xff734B3E),
@@ -117,7 +117,7 @@ class _FourthScreenState extends State<FourthScreen> {
                     ),
                     Container(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 10),
+                          horizontal: 5, vertical: 10),
                       decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topRight: Radius.circular(
@@ -132,7 +132,7 @@ class _FourthScreenState extends State<FourthScreen> {
                         style: TextStyle(
                           color: Color(0xff191D21),
                           fontFamily: "SF Pro",
-                          fontSize: 16,
+                          fontSize: 14,
                           fontWeight: FontWeight.w400,
                           fontStyle: FontStyle.normal,
                         ),

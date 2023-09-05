@@ -21,7 +21,7 @@ class _EightScreenState extends State<EightScreen> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -198,12 +198,12 @@ class _EightScreenState extends State<EightScreen> {
                             borderRadius: BorderRadius.circular(16),
                             color: const Color(0xffFFFFFF),
                           ),
-                          child: Padding(
-                            padding: const EdgeInsets.only(
+                          child: const Padding(
+                            padding: EdgeInsets.only(
                                 bottom: 12, top: 12, left: 12, right: 40),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: const [
+                              children: [
                                 Icon(Icons.wechat_sharp,
                                     color: Color(0xff734B3E)),
                                 SizedBox(

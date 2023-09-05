@@ -54,7 +54,7 @@ class _NineScreenState extends State<NineScreen> {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(
-            horizontal: 15,
+            horizontal: 5,
           ),
           child: Column(
             children: [
@@ -141,7 +141,7 @@ class _NineScreenState extends State<NineScreen> {
                     ),
                     Container(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 10),
+                          horizontal: 2, vertical: 10),
                       decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topRight: Radius.circular(
@@ -156,7 +156,7 @@ class _NineScreenState extends State<NineScreen> {
                         style: TextStyle(
                           color: Color(0xff191D21),
                           fontFamily: "SF Pro",
-                          fontSize: 16,
+                          fontSize: 14,
                           fontWeight: FontWeight.w400,
                           fontStyle: FontStyle.normal,
                         ),

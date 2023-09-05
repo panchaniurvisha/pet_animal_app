@@ -16,7 +16,7 @@ class _ThirteenScreenState extends State<ThirteenScreen> {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(
-            horizontal: 15,
+            horizontal: 2,
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -155,9 +155,9 @@ class _ThirteenScreenState extends State<ThirteenScreen> {
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(16),
                             bottomLeft: Radius.circular(16))),
-                    child: Row(
+                    child: const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Icon(Icons.wechat_sharp, color: Color(0xff734B3E)),
                         SizedBox(
                           width: 15,
@@ -177,7 +177,7 @@ class _ThirteenScreenState extends State<ThirteenScreen> {
                   ),
                   Container(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 14, vertical: 18),
+                        horizontal: 10, vertical: 18),
                     decoration: const BoxDecoration(
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(
@@ -192,7 +192,7 @@ class _ThirteenScreenState extends State<ThirteenScreen> {
                       style: TextStyle(
                         color: Color(0xff191D21),
                         fontFamily: "SF Pro",
-                        fontSize: 16,
+                        fontSize: 14,
                         fontWeight: FontWeight.w400,
                         fontStyle: FontStyle.normal,
                       ),

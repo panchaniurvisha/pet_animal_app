@@ -53,7 +53,7 @@ class _SecondScreenState extends State<SecondScreen> {
       child: Scaffold(
         body: Padding(
           padding: const EdgeInsets.symmetric(
-            horizontal: 15,
+            horizontal: 5,
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -84,8 +84,8 @@ class _SecondScreenState extends State<SecondScreen> {
                           borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(16),
                               bottomLeft: Radius.circular(16))),
-                      child: Row(
-                        children: const [
+                      child: const Row(
+                        children: [
                           Icon(
                             Icons.search,
                             color: Color(0xff734B3E),
@@ -108,7 +108,7 @@ class _SecondScreenState extends State<SecondScreen> {
                     ),
                     Container(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 10),
+                          horizontal: 5, vertical: 10),
                       decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topRight: Radius.circular(
@@ -123,7 +123,7 @@ class _SecondScreenState extends State<SecondScreen> {
                         style: TextStyle(
                           color: Color(0xff191D21),
                           fontFamily: "SF Pro",
-                          fontSize: 16,
+                          fontSize: 14,
                           fontWeight: FontWeight.w400,
                           fontStyle: FontStyle.normal,
                         ),
@@ -175,7 +175,7 @@ class _SecondScreenState extends State<SecondScreen> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(left: 15, top: 8),
+                            padding: const EdgeInsets.only(left: 15, top: 6),
                             child: Row(
                               children: [
                                 Text(

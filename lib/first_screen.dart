@@ -54,11 +54,11 @@ class _FirstScreenState extends State<FirstScreen> {
                   color: const Color(0xffF1F2F4),
                   borderRadius: BorderRadius.circular(16),
                 ),
-                child: Column(
+                child: const Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Row(
-                      children: const [
+                      children: [
                         Text(
                           "Correo electrónico",
                           style: TextStyle(
@@ -84,12 +84,12 @@ class _FirstScreenState extends State<FirstScreen> {
                         ),
                       ],
                     ),
-                    const Divider(
+                    Divider(
                       color: Color(0xffD0AC8A),
                       thickness: 1,
                     ),
                     Row(
-                      children: const [
+                      children: [
                         Text(
                           "Contraseña",
                           style: TextStyle(
@@ -119,7 +119,7 @@ class _FirstScreenState extends State<FirstScreen> {
                 ),
               ),
               const Padding(
-                padding: EdgeInsets.only(bottom: 80, top: 26, left: 170),
+                padding: EdgeInsets.only(bottom: 80, top: 26, left: 50),
                 child: Text(
                   "¿Olvidaste tu contraseña?",
                   style: TextStyle(
@@ -132,22 +132,20 @@ class _FirstScreenState extends State<FirstScreen> {
                   ),
                 ),
               ),
-              InkWell(
-                onTap: () {
-                  debugPrint("Second Screen------>");
-                  Navigator.pushNamedAndRemoveUntil(
-                    context,
-                    RoutesName.bottomScreen,
-                    (route) => false,
-                  );
-                  //Navigator.pushNamed(context, RoutesName.secondScreen);
-                },
-                child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 18, horizontal: 150),
-                  decoration: BoxDecoration(
-                    color: const Color(0xff734B3E),
-                    borderRadius: BorderRadius.circular(16),
+              ElevatedButton(
+                  onPressed: () => Navigator.pushNamedAndRemoveUntil(
+                        context,
+                        RoutesName.bottomScreen,
+                        (route) => false,
+                      ),
+                  style: ElevatedButton.styleFrom(
+                    fixedSize: const Size(400, 55),
+                    backgroundColor: const Color(0xff734B3E),
+                    elevation: 5, // Adjust the button elevation
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                          20), // Adjust the button's border radius
+                    ),
                   ),
                   child: const Text(
                     "Ingresar",
@@ -158,34 +156,42 @@ class _FirstScreenState extends State<FirstScreen> {
                       fontSize: 16,
                       fontFamily: "SF Pro",
                     ),
-                  ),
-                ),
-              ),
+                  )),
               const SizedBox(
                 height: 15,
               ),
-              Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 110, vertical: 18),
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: const Color(0xff734B3E),
+              ElevatedButton(
+                  onPressed: () => Navigator.pushNamedAndRemoveUntil(
+                        context,
+                        RoutesName.bottomScreen,
+                        (route) => false,
+                      ),
+                  style: ElevatedButton.styleFrom(
+                    fixedSize: const Size(400, 55),
+                    backgroundColor: Colors.white,
+                    elevation: 5, // Adjust the button elevation
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                        side: const BorderSide(
+                          color: Color(0xff734B3E),
+                        ) //// Adjust the button's border radius
+                        ),
                   ),
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: const Text(
-                  "Ingresar con Apple",
-                  style: TextStyle(
-                    color: Color(0xff734B3E),
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.w700,
-                    fontSize: 16,
-                    fontFamily: "SF Pro",
-                  ),
-                ),
+                  child: const Text(
+                    "Ingresar con Apple",
+                    style: TextStyle(
+                      color: Color(0xff734B3E),
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 16,
+                      fontFamily: "SF Pro",
+                    ),
+                  )),
+              const SizedBox(
+                height: 15,
               ),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 130, vertical: 25),
+              const Align(
+                alignment: Alignment.center,
                 child: Text(
                   "Crear cuenta",
                   style: TextStyle(
